@@ -1,0 +1,401 @@
+<resources>
+    <string name="app_name">CivilopediaMobile</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="civ_american_name">American</string>
+    <string name="civ_arabian_name">Arabian</string>
+    <string name="civ_australian_name">Australian</string>
+    <string name="civ_aztec_name">Aztec</string>
+    <string name="civ_brazilian_name">Brazilian</string>
+    <string name="civ_canadian_name">Canadian</string>
+    <string name="civ_chinese_name">Chinese</string>
+    <string name="civ_cree_name">Cree</string>
+    <string name="civ_dutch_name">Dutch</string>
+    <string name="civ_egyptian_name">Egyptian</string>
+    <string name="civ_english_name">English</string>
+    <string name="civ_french_name">French</string>
+    <string name="civ_georgian_name">Georgian</string>
+    <string name="civ_german_name">German</string>
+    <string name="civ_greek_name">Greek</string>
+    <string name="civ_hungarian_name">Hungarian</string>
+    <string name="civ_incan_name">Incan</string>
+    <string name="civ_indian_name">Indian</string>
+    <string name="civ_indonesian_name">Indonesian</string>
+    <string name="civ_japanese_name">Japanese</string>
+    <string name="civ_khmer_name">Khmer</string>
+    <string name="civ_kongolese_name">Kongolese</string>
+    <string name="civ_korean_name">Korean</string>
+    <string name="civ_macedonian_name">Macedonian</string>
+    <string name="civ_mali_name">Mali</string>
+    <string name="civ_maori_name">Maori</string>
+    <string name="civ_mapuche_name">Mapuche</string>
+    <string name="civ_mongolian_name">Mongolian</string>
+    <string name="civ_norwegian_name">Norwegian</string>
+    <string name="civ_nubian_name">Nubian</string>
+    <string name="civ_ottoman_name">Ottoman</string>
+    <string name="civ_persian_name">Persian</string>
+    <string name="civ_phoenician_name">Phoenician</string>
+    <string name="civ_polish_name">Polish</string>
+    <string name="civ_roman_name">Roman</string>
+    <string name="civ_russian_name">Russian</string>
+    <string name="civ_scottish_name">Scottish</string>
+    <string name="civ_scythian_name">Scythian</string>
+    <string name="civ_spanish_name">Spanish</string>
+    <string name="civ_sumerian_name">Sumerian</string>
+    <string name="civ_swedish_name">Swedish</string>
+    <string name="civ_zulu_name">Zulu</string>
+
+    <string name="lead_teddy_name">Teddy Roosevelt</string>
+    <string name="lead_saladin_name">Saladin</string>
+    <string name="lead_curtin_name">John Curtin</string>
+    <string name="lead_montezuma_name">Montezuma</string>
+    <string name="lead_pedro_name">Pedro II</string>
+    <string name="lead_wilfrid_name">Wilfrid Laurier</string>
+    <string name="lead_qin_name">Qin Shi Huang</string>
+    <string name="lead_poundmaker_name">Poundmaker</string>
+    <string name="lead_wilhelmina_name">Wilhelmina</string>
+    <string name="lead_cleopatra_name">Cleopatra</string>
+    <string name="lead_victoria_name">Victoria</string>
+    <string name="lead_eleanor_name">Eleanor of Aquitaine</string>
+    <string name="lead_catherine_name">Catherine de Medici</string>
+    <string name="lead_tamar_name">Tamar</string>
+    <string name="lead_frederick_name">Frederick Barbarossa</string>
+    <string name="lead_pericles_name">Pericles</string>
+    <string name="lead_gorgo_name">Gorgo</string>
+    <string name="lead_matthias_name">Matthias Corvinus</string>
+    <string name="lead_pachacuti_name">Pachacuti</string>
+    <string name="lead_gandhi_name">Gandhi</string>
+    <string name="lead_chandragupta_name">Chandragupta</string>
+    <string name="lead_gitarja_name">Gitarja</string>
+    <string name="lead_hojo_name">Hojo Tokimune</string>
+    <string name="lead_jayavarman_name">Jayavarman VII</string>
+    <string name="lead_mvemba_name">Mvemba a Nzinga</string>
+    <string name="lead_seondeok_name">Seondeok</string>
+    <string name="lead_alexander_name">Alexander</string>
+    <string name="lead_mansa_name">Mansa Musa</string>
+    <string name="lead_kupe_name">Kupe</string>
+    <string name="lead_lautaro_name">Lautaro</string>
+    <string name="lead_genghis_name">Genghis Khan</string>
+    <string name="lead_harald_name">Harald Hardrada</string>
+    <string name="lead_amanitore_name">Amanitore</string>
+    <string name="lead_suleiman_name">Suleiman</string>
+    <string name="lead_cyrus_name">Cyrus</string>
+    <string name="lead_dido_name">Dido</string>
+    <string name="lead_jadwiga_name">Jadwiga</string>
+    <string name="lead_trajan_name">Trajan</string>
+    <string name="lead_peter_name">Peter</string>
+    <string name="lead_robert_name">Robert the Bruce</string>
+    <string name="lead_tomyris_name">Tomyris</string>
+    <string name="lead_philip_name">Philip II</string>
+    <string name="lead_gilgamesh_name">Gilgamesh</string>
+    <string name="lead_kristina_name">Kristina</string>
+    <string name="lead_shaka_name">Shaka</string>
+
+    <string name="build_airport_name">Airport</string>
+    <string name="build_amphitheater_name">Amphitheater</string>
+    <string name="build_ancestral_hall_name">Ancestral Hall</string>
+    <string name="build_ancient_walls_name">Ancient Walls</string>
+    <string name="build_archaeological_museum_name">Archaeological Museum</string>
+    <string name="build_arena_name">Arena</string>
+    <string name="build_armory_name">Armory</string>
+    <string name="build_art_museum_name">Art Museum</string>
+    <string name="build_aquarium_name">Aquarium</string>
+    <string name="build_aquatics_center_name">Aquatics Center</string>
+    <string name="build_audience_chamber_name">Audience Chamber</string>
+    <string name="build_bank_name">Bank</string>
+    <string name="build_barracks_name">Barracks</string>
+    <string name="build_basilikoli_paides_name">Basilikoi Paides</string>
+    <string name="build_broadcast_center">Broadcast Center</string>
+    <string name="build_cathedral_name">Cathedral</string>
+    <string name="build_coal_power_plant">Coal Power Plant</string>
+    <string name="build_dare_mehr_name">Dar-e Mehr</string>
+    <string name="build_electronics_factory_name">Electronics Factory</string>
+    <string name="build_factory_name">Factory</string>
+    <string name="build_ferris_wheel_name">Ferris Wheel</string>
+    <string name="build_film_studio_name">Film Studio</string>
+    <string name="build_flood_barrier_name">Flood Barrier</string>
+    <string name="build_food_market_name">Food Market</string>
+    <string name="build_foreign_ministry_name">Foreign Ministry</string>
+    <string name="build_granary_name">Granary</string>
+    <string name="build_grand_bazaar_name">Grand Bazaar</string>
+    <string name="build_grand_masters_chapel_name">Grand Master\'s Chapel</string>
+    <string name="build_gurdwara_name">Gurdwara</string>
+    <string name="build_hangar_name">Hangar</string>
+    <string name="build_hydroelectric_dam_name">Hydroelectric Dam</string>
+    <string name="build_intelligence_agency_name">Intelligence Agency</string>
+    <string name="build_library_name">Library</string>
+    <string name="build_lighthouse_name">Lighthouse</string>
+    <string name="build_madrasa_name">Madrasa</string>
+    <string name="build_marae_name">Marae</string>
+    <string name="build_market_name">Market</string>
+    <string name="build_medieval_walls_name">Medieval Walls</string>
+    <string name="build_meeting_house_name">Meeting House</string>
+    <string name="build_military_academy_name">Military Academy</string>
+    <string name="build_monument_name">Monument</string>
+    <string name="build_mosque_name">Mosque</string>
+    <string name="build_national_history_museum_name">Natural History Museum</string>
+    <string name="build_nuclear_power_plant_name">Nuclear Power Plant</string>
+    <string name="build_oil_power_plant">Oil Power Plant</string>
+    <string name="build_ordu_name">Ordu</string>
+    <string name="build_pagoda_name">Pagoda</string>
+    <string name="build_palace_name">Palace</string>
+    <string name="build_power_plant_name">Power Plant</string>
+    <string name="build_prasat_name">Prasat</string>
+    <string name="build_renaissance_walls_name">Renaissance Walls</string>
+    <string name="build_research_lab_name">Research Lab</string>
+    <string name="build_royal_society_name">Royal Society</string>
+    <string name="build_seaport_name">Seaport</string>
+    <string name="build_sewer_name">Sewer</string>
+    <string name="build_shipyard_name">Shipyard</string>
+    <string name="build_shopping_mall_name">Shopping Mall</string>
+    <string name="build_shrine_name">Shrine</string>
+    <string name="build_stable_name">Stable</string>
+    <string name="build_stadium_name">Stadium</string>
+    <string name="build_stave_church_name">Stave Church</string>
+    <string name="build_stock_exchange_name">Stock Exchange</string>
+    <string name="build_stupa_name">Stupa</string>
+    <string name="build_sukiennice_name">Sukiennice</string>
+    <string name="build_synagogue_name">Synagogue</string>
+    <string name="build_temple_name">Temple</string>
+    <string name="build_thermal_bath_name">Thermal Bath</string>
+    <string name="build_tlachtli_name">Tlachtli</string>
+    <string name="build_tsikhe_name">Tsikhe</string>
+    <string name="build_university_name">University</string>
+    <string name="build_war_department">War Department</string>
+    <string name="build_warlords_throne_name">Warlords Throne</string>
+    <string name="build_wat_name">Wat</string>
+    <string name="build_water_mill_name">Water Mill</string>
+    <string name="build_workshop_name">Workshop</string>
+    <string name="build_queens_bibliotheque_name">Queen\'s Bibliotheque</string>
+    <string name="build_zoo_name">Zoo</string>
+
+    <string name="dis_city_center_name">City Center</string>
+    <string name="dis_campus_name">Campus</string>
+    <string name="dis_seowon_name">Seowon</string>
+    <string name="dis_canal_name">Canal</string>
+    <string name="dis_dam_name">Dam</string>
+    <string name="dis_holy_site_name">Holy Site</string>
+    <string name="dis_lavra_name">Lavra</string>
+    <string name="dis_theater_square_name">Theater Square</string>
+    <string name="dis_acropolis_name">Acropolis</string>
+    <string name="dis_encampment_name">Encampment</string>
+    <string name="dis_ikanda_name">Ikanda</string>
+    <string name="dis_harbor_name">Harbor</string>
+    <string name="dis_royal_navy_dockyard_name">Royal Navy Dockyard</string>
+    <string name="dis_commercial_hub_name">Commercial Hub</string>
+    <string name="dis_suguba_name">Suguba</string>
+    <string name="dis_industrial_zone_name">Industrial Zone</string>
+    <string name="dis_hansa_name">Hansa</string>
+    <string name="dis_entertainment_complex_name">Entertainment Complex</string>
+    <string name="dis_street_carnival_name">Street Carnival</string>
+    <string name="dis_aqueduct_name">Aqueduct</string>
+    <string name="dis_bath_name">Bath</string>
+    <string name="dis_neighborhood_name">Neighborhood</string>
+    <string name="dis_mbanza_name">Mbanza</string>
+    <string name="dis_aerodrome_name">Aerodrome</string>
+    <string name="dis_spaceport_name">Spaceport</string>
+    <string name="dis_government_plaza_name">Government Plaza</string>
+    <string name="dis_water_park_name">Water Park</string>
+    <string name="dis_copacabana_name">Copacabana</string>
+    <string name="dis_cothon_name">Cothon</string>
+
+    <string name="tile_farm_name">Farm</string>
+    <string name="tile_mine_name">Mine</string>
+    <string name="tile_quarry_name">Quarry</string>
+    <string name="tile_plantation_name">Plantation</string>
+    <string name="tile_camp_name">Camp</string>
+    <string name="tile_pasture_name">Pasture</string>
+    <string name="tile_fishing_boats_name">Fishing Boats</string>
+    <string name="tile_lumber_mill_name">Lumber Mill</string>
+    <string name="tile_fort_name">Fort</string>
+    <string name="tile_airstrip_name">Airstrip</string>
+    <string name="tile_seaside_resort_name">Seaside Resort</string>
+    <string name="tile_geothermal_plant_name">Geothermal Plant</string>
+    <string name="tile_wind_farm_name">Wind Farm</string>
+    <string name="tile_solar_farm_name">Solar Farm</string>
+    <string name="tile_offshore_wind_farm_name">Offshore Wind Farm</string>
+    <string name="tile_ski_resort_name">Ski Resort</string>
+    <string name="tile_oil_well_name">Oil Well</string>
+    <string name="tile_offshore_oil_rig_name">Offshore Oil Rig</string>
+    <string name="tile_missile_silo_name">Missile Silo</string>
+    <string name="tile_mountain_tunnel_name">Mountain Tunnel</string>
+    <string name="tile_railroad_name">Railroad</string>
+    <string name="tile_seastead_name">Seasted</string>
+    <string name="tile_alcazar_name">Alcázar</string>
+    <string name="tile_cahokia_mounds_name">Cahokia Mounds</string>
+    <string name="tile_colossal_heads_name">Colossal Heads</string>
+    <string name="tile_moai_name">Moai</string>
+    <string name="tile_monastery_name">Monastery</string>
+    <string name="tile_nazca_line_name">Nazca Line</string>
+
+    <string name="tile_chateau_name">Château</string>
+    <string name="tile_chemamull_name">Chemamull</string>
+    <string name="tile_roman_fort_name">Roman Fort</string>
+    <string name="tile_golf_course_name">Golf Course</string>
+    <string name="tile_great_wall_name">Great Wall</string>
+    <string name="tile_ice_hockey_rink_name">Ice Hockey Rink</string>
+    <string name="tile_kampung_name">Kampung</string>
+    <string name="tile_kurgan_name">Kurgan</string>
+    <string name="tile_mekewap_name">Mekewap</string>
+    <string name="tile_mission_name">Mission</string>
+    <string name="tile_nubian_pyramid_name">Nubian Pyramid</string>
+    <string name="tile_open_air_museum_name">Open Air Museum</string>
+    <string name="tile_outback_station_name">Outback Station</string>
+    <string name="tile_pa_name">Pā</string>
+    <string name="tile_pairidaerza_name">Pairidaerza</string>
+    <string name="tile_polder_name">Polder</string>
+    <string name="tile_qhapaq_nan_name">Qhapaq Ñan</string>
+    <string name="tile_sphinx_name">Sphinx</string>
+    <string name="tile_stepwell_name">Stepwell</string>
+    <string name="tile_terrace_farm_name">Terrace Farm</string>
+    <string name="tile_ziggurat_name">Ziggurat</string>
+
+    <string name="tile_city_park_name">City Park</string>
+    <string name="tile_fishery_name">Fishery</string>
+    <string name="tile_national_park_name">National Park</string>
+
+    <string-array name="BasicUnits">
+        <item>Settler</item>
+        <item>Builder</item>
+        <item>Trader</item>
+        <item>Archaeologist</item>
+        <item>Spy</item>
+        <item>Naturalist</item>
+        <item>Rock Band</item>
+        <item>Great General</item>
+        <item>Great Admiral</item>
+        <item>Great Engineer</item>
+        <item>Great Merchant</item>
+        <item>Great Prophet</item>
+        <item>Great Scientist</item>
+        <item>Great Writer</item>
+        <item>Great Artist</item>
+        <item>Great Musician</item>
+        <item>Scout</item>
+        <item>Skirmisher</item>
+        <item>Ranger</item>
+        <item>Spec Ops</item>
+        <item>Warrior</item>
+        <item>Swordsman</item>
+        <item>Musketman</item>
+        <item>Infantry</item>
+        <item>Mechanized Infantry</item>
+        <item>Slinger</item>
+        <item>Archer</item>
+        <item>Crossbowman</item>
+        <item>Field Cannon</item>
+        <item>Machine Gun</item>
+        <item>Spearman</item>
+        <item>Pikeman</item>
+        <item>Pike and Shot</item>
+        <item>AT Crew</item>
+        <item>Modern AT</item>
+        <item>Horseman</item>
+        <item>Courser</item>
+        <item>Cavalry</item>
+        <item>Helicopter</item>
+        <item>Heavy Chariot</item>
+        <item>Knight</item>
+        <item>Cuirassier</item>
+        <item>Tank</item>
+        <item>Modern Armor</item>
+        <item>Giant Death Robot</item>
+        <item>Catapult</item>
+        <item>Bombard</item>
+        <item>Artillery</item>
+        <item>Rocket Artillery</item>
+        <item>Galley</item>
+        <item>Caravel</item>
+        <item>Ironclad</item>
+        <item>Destoryer</item>
+        <item>Quadrireme</item>
+        <item>Frigate</item>
+        <item>Battleship</item>
+        <item>Missile Cruiser</item>
+        <item>Privateer</item>
+        <item>Submarine</item>
+        <item>Nuclear Submarine</item>
+        <item>Aircraft Carrier</item>
+        <item>Biplane</item>
+        <item>Fighter</item>
+        <item>Jet Fighter</item>
+        <item>Bomber</item>
+        <item>Jet Bomber</item>
+        <item>Battering Ram</item>
+        <item>Siege Tower</item>
+        <item>Military Engineer</item>
+        <item>Medic</item>
+        <item>Supply Convoy</item>
+        <item>Observation Balloon</item>
+        <item>Drone</item>
+        <item>Anti-Air Gun</item>
+        <item>Mobile SAM</item>
+        <item>Missionary</item>
+        <item>Apostle</item>
+        <item>Inquisitor</item>
+        <item>Guru</item>
+        <item>Warrior Monk</item>
+    </string-array>
+
+    <string name="unit_bireme_name">Bireme</string>
+    <string name="unit_eagle_warrior_name">Eagle Warrior</string>
+    <string name="unit_hoplite_name">Hoplite</string>
+    <string name="unit_maryannu_name">Maryannu Chariot Srcher</string>
+    <string name="unit_okihtcitaw_name">Okihtcitaw</string>
+    <string name="unit_pitati_name">Pitati Archer</string>
+    <string name="unit_viking_longship_name">Viking Longship</string>
+    <string name="unit_war_cart_name">War-Cart</string>
+    <string name="unit_hetairoi_name">Hetairoi</string>
+    <string name="unit_hypaspist_name">Hypaspist</string>
+    <string name="unit_immortal_name">Immortal</string>
+    <string name="unit_legion_name">Legion</string>
+    <string name="unit_ngao_name">Ngao Mbeba</string>
+    <string name="unit_saka_name">Saka Horse Archer</string>
+    <string name="unit_toa_name">Toa</string>
+    <string name="unit_varu_name">Varu</string>
+    <string name="unit_barbary_name">Barbary Corsair</string>
+    <string name="unit_berserker_name">Berserker</string>
+    <string name="unit_black_army_name">Black Army</string>
+    <string name="unit_crouching_name">Crouching Tiger</string>
+    <string name="unit_domrey_name">Domrey</string>
+    <string name="unit_impi_name">Impi</string>
+    <string name="unit_jong_name">Jong</string>
+    <string name="unit_keshig_name">Keshig</string>
+    <string name="unit_khevsur_name">Khevsur</string>
+    <string name="unit_mamluk_name">Mamluk</string>
+    <string name="unit_mandekalu_name">Mandekalu Cavalry</string>
+    <string name="unit_samurai_name">Samurai</string>
+    <string name="unit_warakaq_name">Warak\'aq</string>
+    <string name="unit_winged_name">Winged Hussar</string>
+    <string name="unit_carolean_name">Carolean</string>
+    <string name="unit_conquistador_name">Conquistador</string>
+    <string name="unit_zeven_name">De Zeven Provinciën</string>
+    <string name="unit_hwacha_name">Hwacha</string>
+    <string name="unit_janissary_name">Janissary</string>
+    <string name="unit_malon_name">Malón Raider</string>
+    <string name="unit_sea_dog_name">Sea Dog</string>
+    <string name="unit_cossack_name">Cossack</string>
+    <string name="unit_garde_name">Garde Imperiale</string>
+    <string name="unit_highlander_name">Highlander</string>
+    <string name="unit_huszar_name">Huszár</string>
+    <string name="unit_minas_name">Minas Geraes</string>
+    <string name="unit_redcoat_name">Redcoat</string>
+    <string name="unit_rough_rider_name">Rough Rider</string>
+    <string name="unit_digger_name">Digger</string>
+    <string name="unit_mountie_name">Mountie</string>
+    <string name="unit_uboat_name">U-Boat</string>
+    <string name="unit_mustang_name">P-51 Mustang</string>
+</resources>

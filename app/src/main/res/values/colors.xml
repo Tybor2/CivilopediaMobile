@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="darkRed">#B71C1C </color>
+    <color name="darkBlue"> #154360 </color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="USBlue">#20397C</color>
+    <color name="USWhite">#F9F9F9</color>
+
+    <color name="ARYellow">#FBE468</color>
+    <color name="ARGreen">#256210</color>
+
+    <color name="AUGreen">#256210</color>
+    <color name="AUYellow">#FBE468</color>
+
+    <color name="AZCyan">#9CE8C2</color>
+    <color name="AZRed">#A43E25</color>
+
+    <color name="BZGreen">#17A344</color>
+    <color name="BZYellow">#E1D320</color>
+
+    <color name="CAWhite">#FFFFFF</color>
+    <color name="CARed">#FF0000</color>
+    
+    <color name="CHGreen">#156C31</color>
+    <color name="CHWhite">#FFFFFF</color>
+    
+    <color name="CRIndigo">#243875</color>
+    <color name="CRGreen">#3D9646</color>
+
+    <color name="DUOrange">#CF6F00</color>
+    <color name="DUBlue">#8CB1FF</color>
+
+    <color name="EGTurquoise">#155760</color>
+    <color name="EGYellow">#FFFF58</color>
+
+    <color name="EleanorPink">#FA72A8</color>
+    <color name="VictoriaRed">#6D0200</color>
+    <color name="ENWhite">#FFFFFF</color>
+    
+    <color name="FRBlue">#0000CD</color>
+    <color name="FRYellow">#EBEB8B</color>
+    
+    <color name="GEOWhite">#FFFFFF</color>
+    <color name="GEOOrange">#CE7318</color>
+
+    <color name="GERGray">#B3B2B8</color>
+    <color name="GERBlack">#252B21</color>
+
+    <color name="GRBlue">#4F86B9</color>
+    <color name="PericlesWhite">#FFFFFF</color>
+    <color name="GorgoBrown">#73342C</color>
+
+    <color name="HUGreen">#156C31</color>
+    <color name="HUOrange">#FE8113</color>
+
+    <color name="INDORed">#A72607</color>
+    <color name="INDOIndigo">#0AAA9E</color>
+
+    <color name="INDIPurple">#922479</color>
+    <color name="INDIBlue">#74DBCA</color>
+
+    <color name="INCABrown">#944A00</color>
+    <color name="INCAYellow">#F9D906</color>
+
+    <color name="JAWhite">#FFFFFF</color>
+    <color name="JARed">#921010</color>
+    
+    <color name="KHPurple">#74009B</color>
+    <color name="KHOrange">#FE8113</color>
+    
+    <color name="KONYellow">#EEE153</color>
+    <color name="KONRed">#BB1212</color>
+    
+    <color name="KORRed">#A72C25</color>
+    <color name="KORLavender">#7079E2</color>
+
+    <color name="MACGray">#888888</color>
+    <color name="MACYellow">#E9EB01</color>
+
+    <color name="MALRed">#780102</color>
+    <color name="MALGold">#E8DD9D</color>
+
+    <color name="MAORed">#D00004</color>
+    <color name="MAOBlue">#81E3EB</color>
+
+    <color name="MAPBlue">#0050CD</color>
+    <color name="MAPLightBlue">#53C1FF</color>
+
+    <color name="MONRed">#760101</color>
+    <color name="MONOrange">#FE7C06</color>
+
+    <color name="NORNavy">#2A3380</color>
+    <color name="NORRed">#EA2D19</color>
+
+    <color name="NUBCream">#FAEC7F</color>
+    <color name="NUBBrown">#582B1C</color>
+
+    <color name="OTWhite">#FFFFFF</color>
+    <color name="OTGreen">#0E602B</color>
+    
+    <color name="PEPeriwinkle">#B780E6</color>
+    <color name="PERed">#9A2B22</color>
+    
+    <color name="PHPurple">#6D00CD</color>
+    <color name="PHTeal">#6BA9F4</color>
+
+    <color name="PORed">#790002</color>
+    <color name="POPink">#E47574</color>
+
+    <color name="ROViolet">#460076</color>
+    <color name="ROGold">#F0C700</color>
+
+    <color name="RUYellow">#EFD756</color>
+    <color name="RUBlack">#000000</color>
+    
+    <color name="SCOTWhite">#F6FBFF</color>
+    <color name="SCOTBlue">#516FAB</color>
+    
+    <color name="SCYTan">#FFB23C</color>
+    <color name="SCYRed">#A4100E</color>
+
+    <color name="SPRed">#AD2424</color>
+    <color name="SPYellow">#DDCD00</color>
+
+    <color name="SUIndigo">#404C86</color>
+    <color name="SUOrange">#E28D18</color>
+
+    <color name="SWBlue">#74A3F3</color>
+    <color name="SWYellow">#E7DF04</color>
+
+    <color name="ZUBrown">#783E02</color>
+    <color name="ZUWhite">#FFFFFF</color>
+</resources>
