@@ -398,4 +398,7 @@
     <string name="unit_mountie_name">Mountie</string>
     <string name="unit_uboat_name">U-Boat</string>
     <string name="unit_mustang_name">P-51 Mustang</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

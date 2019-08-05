@@ -20,6 +20,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.Menu;
 import android.webkit.WebSettings;
@@ -73,10 +74,16 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        mWebView = (WebView) findViewById(R.id.webview);
+        WikiInfoFragment fragment = new WikiInfoFragment();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        fragment.setUrl("https://civilization.fandom.com/wiki/Government_(Civ6)");
+        ft.replace(R.id.fragment_container, fragment);
+        ft.commit();
+
+        /**mWebView = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        mWebView.loadUrl("https://civilization.fandom.com/wiki/Government_(Civ6)");
+        mWebView.loadUrl("https://civilization.fandom.com/wiki/Government_(Civ6)");**/
         createLeaders();
         navigationView.setNavigationItemSelectedListener(this);
     }
@@ -735,7 +742,12 @@ public class MainActivity extends AppCompatActivity
                 if (childList.get(headerList.get(groupPosition)) != null) {
                     MenuModel model = childList.get(headerList.get(groupPosition)).get(childPosition);
                     if (model.url.length() > 0) {
-                        mWebView.loadUrl(model.url);
+                        WikiInfoFragment fragment = new WikiInfoFragment();
+                        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                        fragment.setUrl(model.url);
+                        ft.replace(R.id.fragment_container, fragment);
+                        ft.commit();
+                        //mWebView.loadUrl(model.url);
                         onBackPressed();
                     }
                 }
