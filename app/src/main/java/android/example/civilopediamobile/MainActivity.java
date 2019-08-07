@@ -45,10 +45,14 @@ public class MainActivity extends AppCompatActivity
     private List<Civilization> civList;
     private CivilizationCollection civInstance;
     private LeaderCollection leaderInstance;
+    private String currFrag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(savedInstanceState != null) {
+            currFrag = savedInstanceState.getString("currFrag");
+        }
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -56,10 +60,12 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                Intent i = new Intent(getApplicationContext(), GameCreatorActivity.class);
-                startActivity(i);
+                CivInfoFragment fragment = new CivInfoFragment();
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ft.addToBackStack(null);
+                ft.replace(R.id.fragment_container, fragment, "civViewer");
+                currFrag = "civViewer";
+                ft.commit();
             }
         });
 
@@ -73,12 +79,18 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+        View fragmentContainer = findViewById(R.id.fragment_container);
 
-        WikiInfoFragment fragment = new WikiInfoFragment();
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        fragment.setUrl("https://civilization.fandom.com/wiki/Government_(Civ6)");
-        ft.replace(R.id.fragment_container, fragment);
-        ft.commit();
+        if(currFrag == null) {
+
+            WikiInfoFragment fragment = new WikiInfoFragment();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            fragment.setUrl("https://civilization.fandom.com/wiki/Civilization_VI");
+            ft.replace(R.id.fragment_container, fragment, "wikiViewer");
+            ft.addToBackStack(null);
+            currFrag = "wikiViewer";
+            ft.commit();
+        }
 
         /**mWebView = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = mWebView.getSettings();
@@ -86,6 +98,23 @@ public class MainActivity extends AppCompatActivity
         mWebView.loadUrl("https://civilization.fandom.com/wiki/Government_(Civ6)");**/
         createLeaders();
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("currFrag", currFrag);
     }
 
     @Override
@@ -140,6 +169,9 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void prepareMenuData() {
+        MenuModel menuModel = new MenuModel("Civilization Viewer", true, false,
+                "civViewer");
+        headerList.add(menuModel);
         civList = CivilizationCollection.get(getApplicationContext()).getCivilizations();
         civInstance = CivilizationCollection.get(getApplicationContext());
         leaderInstance = LeaderCollection.get(getApplicationContext());
@@ -725,12 +757,22 @@ public class MainActivity extends AppCompatActivity
         expandableListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
             @Override
             public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
-                if (headerList.get(groupPosition).isGroup) {
+                /**if (headerList.get(groupPosition).isGroup) {
                     if(!headerList.get(groupPosition).hasChildren) {
                         mWebView.loadUrl(headerList.get(groupPosition).url);
                         onBackPressed();
                     }
+                }**/
+                if (headerList.get(groupPosition).url.equals("civViewer")) {
+                    CivInfoFragment fragment = new CivInfoFragment();
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.addToBackStack(null);
+                    ft.replace(R.id.fragment_container, fragment, "civViewer");
+                    currFrag = "civViewer";
+                    ft.commit();
+                    onBackPressed();
                 }
+
                 return false;
             }
         });
@@ -741,11 +783,19 @@ public class MainActivity extends AppCompatActivity
                                         int childPosition, long id) {
                 if (childList.get(headerList.get(groupPosition)) != null) {
                     MenuModel model = childList.get(headerList.get(groupPosition)).get(childPosition);
-                    if (model.url.length() > 0) {
+                    if (model.url.equals("civViewer")) {
+                        CivInfoFragment fragment = new CivInfoFragment();
+                        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                        ft.addToBackStack(null);
+                        ft.replace(R.id.fragment_container, fragment, "civViewer");
+                        currFrag = "civViewer";
+                        ft.commit();
+                    }else if (model.url.length() > 0) {
                         WikiInfoFragment fragment = new WikiInfoFragment();
                         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
                         fragment.setUrl(model.url);
-                        ft.replace(R.id.fragment_container, fragment);
+                        ft.replace(R.id.fragment_container, fragment, "wikiViewer");
+                        currFrag = "wikiViewer";
                         ft.commit();
                         //mWebView.loadUrl(model.url);
                         onBackPressed();
