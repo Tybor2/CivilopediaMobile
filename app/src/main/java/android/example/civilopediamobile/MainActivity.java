@@ -809,8 +809,15 @@ public class MainActivity extends AppCompatActivity
                     currFrag = "civViewer";
                     ft.commit();
                     onBackPressed();
+                } else if (headerList.get(groupPosition).url.equals("gameGenerator")) {
+                    GameGeneratorFragment fragment = new GameGeneratorFragment();
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.addToBackStack(null);
+                    ft.replace(R.id.fragment_container, fragment, "gameGenerator");
+                    currFrag = "gameGenerator";
+                    ft.commit();
+                    onBackPressed();
                 }
-
                 return false;
             }
         });
@@ -827,6 +834,13 @@ public class MainActivity extends AppCompatActivity
                         ft.addToBackStack(null);
                         ft.replace(R.id.fragment_container, fragment, "civViewer");
                         currFrag = "civViewer";
+                        ft.commit();
+                    }else if (model.url.equals("gameGenerator")){
+                        GameGeneratorFragment fragment = new GameGeneratorFragment();
+                        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                        ft.addToBackStack(null);
+                        ft.replace(R.id.fragment_container, fragment, "gameGenerator");
+                        currFrag = "gameGenerator";
                         ft.commit();
                     }else if (model.url.length() > 0) {
                         WikiInfoFragment fragment = new WikiInfoFragment();

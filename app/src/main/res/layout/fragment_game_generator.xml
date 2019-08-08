@@ -1,14 +1,393 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".GameGeneratorFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/basic_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Generate Basic Game" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/advanced_game_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="8dp"
+        android:text="Generate Advanced Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/basic_game_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/generate_civ_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Civilization:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basic_game_button" />
+
+    <TextView
+        android:id="@+id/generate_leader_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Leader:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_civ_label" />
+
+    <TextView
+        android:id="@+id/generate_map_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Map:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_difficulty_label" />
+
+    <TextView
+        android:id="@+id/generate_size_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Size:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_map_label" />
+
+    <TextView
+        android:id="@+id/generate_victory_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Victory Type:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_size_label" />
+
+    <TextView
+        android:id="@+id/generate_difficulty_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Difficulty:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_leader_label" />
+
+    <TextView
+        android:id="@+id/generate_world_age_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="World Age: "
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_victory_label"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_temp_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Temperature:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_world_age_label"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_rain_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Rainfall:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_temp_label"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_sea_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Sea Level:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_rain_label"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_resource_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Resources:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_sea_label"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_start_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Start Position:"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate_resource_label"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_civ_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/generate_civ_label"
+        app:layout_constraintTop_toBottomOf="@+id/advanced_game_button" />
+
+    <TextView
+        android:id="@+id/generate_leader_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toEndOf="@+id/generate_leader_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_civ_TV" />
+
+    <TextView
+        android:id="@+id/generate_difficulty_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@+id/generate_difficulty_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_leader_TV" />
+
+    <TextView
+        android:id="@+id/generate_map_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toEndOf="@+id/generate_map_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_difficulty_TV" />
+
+    <TextView
+        android:id="@+id/generate_size_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toEndOf="@+id/generate_size_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_map_TV" />
+
+    <TextView
+        android:id="@+id/generate_victory_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/generate_victory_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_size_TV" />
+
+    <TextView
+        android:id="@+id/generate_age_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/generate_world_age_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_victory_TV"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_temp_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/generate_temp_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_age_TV"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_rain_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/generate_rain_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_temp_TV"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_sea_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/generate_sea_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_rain_TV"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_resource_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/generate_resource_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_sea_TV"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/generate_start_TV"
+        android:layout_width="0dp"
+        android:layout_height="27.5sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/generate_start_label"
+        app:layout_constraintTop_toBottomOf="@+id/generate_resource_TV"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

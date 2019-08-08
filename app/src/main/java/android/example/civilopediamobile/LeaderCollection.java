@@ -38,6 +38,15 @@ public class LeaderCollection {
         return leaderList;
     }
 
+    public List<Leader> getLeaders(Civilization civ) {
+        List<Leader> leaders = new ArrayList<>();
+        for(Leader leader: leaderList){
+            if(leader.getCivilization().equals(civ.getName()))
+                leaders.add(leader);
+        }
+        return leaders;
+    }
+
     public Leader getLeader(String name, String civ){
         for(Leader leader: leaderList){
             if(leader.getName().equals(name) && leader.getCivilization().equals(civ))
@@ -45,6 +54,7 @@ public class LeaderCollection {
         }
         return null;
     }
+
 
     public void setLeaders(List<Leader> leaders){
         leaderList = leaders;

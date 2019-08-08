@@ -485,5 +485,98 @@
         <item>Yosemite</item>
         <item>Zhangye Danxia</item>
     </string-array>
+
+
+    <string-array name="difficulty">
+        <item>Settler</item>
+        <item>Chieftain</item>
+        <item>Warlord</item>
+        <item>Prince</item>
+        <item>King</item>
+        <item>Emperor</item>
+        <item>Immortal</item>
+        <item>Deity</item>
+    </string-array>
+
+    <string-array name="map">
+        <item>Continents</item>
+        <item>Fractal</item>
+        <item>Inland Sea</item>
+        <item>Island Plates</item>
+        <item>Pangaea</item>
+        <item>Shuffle</item>
+        <item>Six-sided Snowflake</item>
+        <item>Four-leaf Clover</item>
+        <item>Earth</item>
+        <item>True Start Location Earth</item>
+        <item>Archipelago</item>
+        <item>Seven Seas</item>
+        <item>Small Continents</item>
+        <item>East Asia</item>
+        <item>True Start Location East Asia</item>
+        <item>Europe</item>
+        <item>True Start Location Europe</item>
+    </string-array>
+
+    <string-array name="mapSize">
+        <item>Duel (2 Players)</item>
+        <item>Tiny (4 Players)</item>
+        <item>Small (6 Players)</item>
+        <item>Standard (8 Players)</item>
+        <item>Large (10 Players)</item>
+        <item>Huge (12 Players)</item>
+    </string-array>
+
+    <string-array name="victory">
+        <item>Score Victory</item>
+        <item>Domination Victory</item>
+        <item>Science Victory</item>
+        <item>Culture Victory</item>
+        <item>Religious Victory</item>
+        <item>Diplomatic Victory</item>
+    </string-array>
+
+    <string-array name="worldAge">
+        <item>New (More Hills and Mountains)</item>
+        <item>Standard (Normal)</item>
+        <item>Old(More flatland)</item>
+        <item>Random</item>
+    </string-array>
+
+    <string-array name="temperature">
+        <item>Hot (increased Desert, decreased Tundra/Snow)</item>
+        <item>Standard (average terrain)</item>
+        <item>Cold (more woods, rainforests and marshland)</item>
+        <item>Random</item>
+    </string-array>
+
+    <string-array name="rainfall">
+        <item>Arid (less woods, rainforests, and marshland)</item>
+        <item>Standard (average)</item>
+        <item>Wet (more woods, rainforests and marshland)</item>
+        <item>Random</item>
+    </string-array>
+
+    <string-array name="seaLevel">
+        <item>Low (extra landmass)</item>
+        <item>Standard (default)</item>
+        <item>High (extra sea tiles)</item>
+        <item>Random</item>
+    </string-array>
+
+    <string-array name="resources">
+        <item>Sparse</item>
+        <item>Standard</item>
+        <item>Abundant</item>
+        <item>Random</item>
+    </string-array>
+
+    <string-array name="start">
+        <item>Balanced (roughly equalized)</item>
+        <item>Standard (variable quality)</item>
+        <item>Legendary (great starting positions for all)</item>
+    </string-array>
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
