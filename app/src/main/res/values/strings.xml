@@ -400,5 +400,90 @@
     <string name="unit_mustang_name">P-51 Mustang</string>
 
 
+    <string-array name="wonders">
+        <item>Alhambra</item>
+        <item>Amundsen-Scott Research Station</item>
+        <item>Angkor Wat</item>
+        <item>Apadana</item>
+        <item>Big Ben</item>
+        <item>Bolshoi Theatre</item>
+        <item>Broadway</item>
+        <item>Casa de Contración</item>
+        <item>Chichen Itza</item>
+        <item>Colosseum</item>
+        <item>Colossus</item>
+        <item>Cristo Redentor</item>
+        <item>Eiffel Tower</item>
+        <item>Estádio do Maracanã</item>
+        <item>Forbidden City</item>
+        <item>Golden Gate Bridge</item>
+        <item>Great Bath</item>
+        <item>Great Library</item>
+        <item>Great Lighthouse</item>
+        <item>Great Zimbabwe</item>
+        <item>Hagia Sophia</item>
+        <item>Hanging Gardens</item>
+        <item>Hermitage</item>
+        <item>Huey Teocalli</item>
+        <item>Jebel Barkal</item>
+        <item>Kilwa Kisiwani</item>
+        <item>Kotoku-in</item>
+        <item>Machu Picchu</item>
+        <item>Mahabodhi Temple</item>
+        <item>Meenakshi Temple</item>
+        <item>Mausoleum at Halicarnassus</item>
+        <item>Mont St. Michel</item>
+        <item>Oracle</item>
+        <item>Országház</item>
+        <item>Oxford University</item>
+        <item>Panama Canal</item>
+        <item>Petra</item>
+        <item>Potala Palace</item>
+        <item>Pyramids</item>
+        <item>Ruhr Valley</item>
+        <item>Statue of Liberty</item>
+        <item>St Basil\'s Cathedral</item>
+        <item>Stonehenge</item>
+        <item>Sydney Opera House</item>
+        <item>Taj Mahal</item>
+        <item>Temple of Artemis</item>
+        <item>Terracotta Army</item>
+        <item>University of Sankore</item>
+        <item>Venetian Arsenal</item>
+    </string-array>
+
+    <string-array name="naturalWonders">
+        <item>Chocolate Hills</item>
+        <item>Cliffs of Dover</item>
+        <item>Crater Lake</item>
+        <item>Dead Sea</item>
+        <item>Delicate Arch</item>
+        <item>Eye of the Sahara</item>
+        <item>Eyjafjallajökull</item>
+        <item>Galápagos Islands</item>
+        <item>Giant\'s Causeway</item>
+        <item>Gobustan</item>
+        <item>Great Barrier Reef</item>
+        <item>Ha Long Bay</item>
+        <item>Ik-Kil</item>
+        <item>Lake Retba</item>
+        <item>Lysefjord</item>
+        <item>Mato Tipila</item>
+        <item>Matterhorn</item>
+        <item>Mount Everest</item>
+        <item>Mount Kilimanjaro</item>
+        <item>Mount Roraima</item>
+        <item>Mount Vesuvius</item>
+        <item>Pamukkale</item>
+        <item>Pantanal</item>
+        <item>Piopiotahi</item>
+        <item>Sahara el Beyda</item>
+        <item>Torres del Paine</item>
+        <item>Tsingy de Bemaraha</item>
+        <item>Ubsunur Hollow</item>
+        <item>Uluru</item>
+        <item>Yosemite</item>
+        <item>Zhangye Danxia</item>
+    </string-array>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -172,6 +172,8 @@ public class MainActivity extends AppCompatActivity
         MenuModel menuModel = new MenuModel("Civilization Viewer", true, false,
                 "civViewer");
         headerList.add(menuModel);
+        menuModel = new MenuModel("Game Generator", true, false, "gameGenerator");
+        headerList.add(menuModel);
         civList = CivilizationCollection.get(getApplicationContext()).getCivilizations();
         civInstance = CivilizationCollection.get(getApplicationContext());
         leaderInstance = LeaderCollection.get(getApplicationContext());
@@ -185,6 +187,8 @@ public class MainActivity extends AppCompatActivity
         setUpBuildingsMenu();
         setUpTileImprovements();
         setUpUnitsMenu();
+        setUpWondersMenu();
+        setUpNaturalWondersMenu();
     }
 
     private void setUpCivilizationsMenu(){
@@ -390,6 +394,40 @@ public class MainActivity extends AppCompatActivity
         headerList.add(menuModel);
         List<MenuModel> childModelsList = new ArrayList<>();
         String[] units = getResources().getStringArray(R.array.BasicUnits);
+        String[] urls = new String[units.length];
+        for(int i = 0; i < units.length; i++){
+            urls[i] = "https://civilization.fandom.com/wiki/" + units[i].replaceAll(" ", "_") + "_(Civ6)";
+            MenuModel childModel = new MenuModel(units[i], false, false, urls[i]);
+            childModelsList.add(childModel);
+        }
+
+        if (menuModel.hasChildren) {
+            childList.put(menuModel, childModelsList);
+        }
+    }
+
+    private void setUpWondersMenu(){
+        MenuModel menuModel = new MenuModel("Wonders", true, true, "");
+        headerList.add(menuModel);
+        List<MenuModel> childModelsList = new ArrayList<>();
+        String[] units = getResources().getStringArray(R.array.wonders);
+        String[] urls = new String[units.length];
+        for(int i = 0; i < units.length; i++){
+            urls[i] = "https://civilization.fandom.com/wiki/" + units[i].replaceAll(" ", "_") + "_(Civ6)";
+            MenuModel childModel = new MenuModel(units[i], false, false, urls[i]);
+            childModelsList.add(childModel);
+        }
+
+        if (menuModel.hasChildren) {
+            childList.put(menuModel, childModelsList);
+        }
+    }
+
+    private void setUpNaturalWondersMenu(){
+        MenuModel menuModel = new MenuModel("Natural Wonders", true, true, "");
+        headerList.add(menuModel);
+        List<MenuModel> childModelsList = new ArrayList<>();
+        String[] units = getResources().getStringArray(R.array.naturalWonders);
         String[] urls = new String[units.length];
         for(int i = 0; i < units.length; i++){
             urls[i] = "https://civilization.fandom.com/wiki/" + units[i].replaceAll(" ", "_") + "_(Civ6)";
